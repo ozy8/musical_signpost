@@ -33,11 +33,11 @@
 <div class="home_jumbotron">
 
   <div class="col-md-3">Trending -- Pegged to highest view count which i can't do yet</div>
-  <div class="col-md-3">Newest Music
+  <div class="col-md-3">Newest Music 
     <div class="newest_music">
       <% unless @musics.last.blank? %>
         <%=  shownewest @musics.last.youtube_url  %>
-        <a href ="http://localhost:3000/musics/<%= @musics.last.id%>">Listen to song</a>
+        <%= link_to "Listen to Song",  music_path( @musics.last.id ) %>
       <% end %>
     </div>
   </div>

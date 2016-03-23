@@ -93,7 +93,12 @@ h1 {
 }
 
 .home_container_1{
+  min-width: 1000px;
   text-align: center;
+}
+
+.home_container_1 p {
+  font-size: 1.5em;
 }
 
 .body_container {
@@ -117,13 +122,13 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family:  'Tangerine', serif;
-  font-size: 2em;
+  font-family:  helvetica;
+  font-size: 1.5em;
   min-width: 300px;
   max-width: 300px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #0080ff;
+  background-color: #e1e1e1;
 }
 
 .newest_music{

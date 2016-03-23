@@ -7,11 +7,11 @@
 
 <div class="home_container">
   <div class="search">
-    <a href ="http://localhost:3000/musics"><h2>Browse Music</h2></a>
+    <%= link_to "Browse Music", musics_path %>
   </div>
 
   <div class="search">
-    <h2><a href ="http://localhost:3000/signposts">Browse Signpost</a></h2>
+    <%= link_to "Browse Signposts", signposts_path %>
   </div>
 
 </div>
@@ -33,7 +33,7 @@
 <div class="home_jumbotron">
 
   <div class="col-md-3">Trending -- Pegged to highest view count which i can't do yet</div>
-  <div class="col-md-3">Newest Music 
+  <div class="col-md-3">Newest Music
     <div class="newest_music">
       <% unless @musics.last.blank? %>
         <%=  shownewest @musics.last.youtube_url  %>

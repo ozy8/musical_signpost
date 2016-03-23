@@ -239,8 +239,11 @@ h1 {
 }
 
 .comment {
+  text-align: center;
+  font-size: helvetica;
+  font-size: 1.5em;
   align-self: center;
-  border: black solid 2px;
+  border: #94a2af solid 2px;
   width: 500px;
   height: 200px;
 }
@@ -260,11 +263,6 @@ h1 {
 .anger {
   background-color: #ff0000;
 }
-
-// .happy_img {
-//   background-image: url("http://www.zastavki.com/pictures/2560x1600/2011/Nature_Clouds_Sunshine_028618_.jpg");
-// }
-
 
 .thumbnail_container {
   height: 300px;

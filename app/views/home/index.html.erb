@@ -35,8 +35,10 @@
   <div class="col-md-3">Trending -- Pegged to highest view count which i can't do yet</div>
   <div class="col-md-3">Newest Music
     <div class="newest_music">
-      <%=  shownewest @musics.last.youtube_url  %>
-      <a href ="http://localhost:3000/musics/<%= @musics.last.id%>">Listen to song</a>
+      <% unless @musics.last.blank? %>
+        <%=  shownewest @musics.last.youtube_url  %>
+        <a href ="http://localhost:3000/musics/<%= @musics.last.id%>">Listen to song</a>
+      <% end %>
     </div>
   </div>
   <div class="col-md-3">Request new Signposts</div>

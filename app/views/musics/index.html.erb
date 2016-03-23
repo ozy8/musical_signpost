@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Music</h1>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <div class="jumbotron clearfix" >
+        <div class="list">
+        <% @musics.each do |music| %>
+
+
+              <div class="col-md-4">
+                <div class="music_display">
+                  <div class="music_title"><%= music.title %></div>
+                  <div class="truncate"><%= music.feeling %></div>
+                  <!-- <div class="truncate"><%= music.youtube_url %></div> -->
+                  <!-- displaying thumbnails -->
+                  <div class="thumbnail_container">
+                      <%= thumbnail music.youtube_url %>
+                  </div>
+
+                  <div class="singleline">
+                    <div><%= link_to 'Show', music %></div>
+                    <!-- <div><%= link_to 'Edit', edit_music_path(music) %></div>
+                    <div><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></div> -->
+                  </div>
+                </div>
+              </div>
+
+
+
+        <% end %>
+        </div>
+    </div>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Music', new_music_path %>

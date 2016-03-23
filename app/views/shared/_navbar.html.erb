@@ -1,0 +1,51 @@
+
+<header>
+  <nav class="navbar clearfix" role="navigation" id="navigation">
+    <div class="spacer">&nbsp;</div>
+
+
+      <div id="user_nav">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        <% else %>
+          <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Log In", new_user_session_path %>
+        <% end %>
+
+        <!-- <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end %> -->
+      </div>
+
+
+
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed button button-full" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:3000">
+                  <!-- <img class="logo" src="img/logo.png" alt="logo"> -->
+                  <h5>MS</h5></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                      <a href="http://localhost:3000">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="http://localhost:3000/musics">Music</a></li>
+                    <li><a href="http://localhost:3000/signposts">Signposts</a></li>
+
+                    <!-- <li><a href="http://localhost:3000/pages/about">About Us</a></li>
+                    <li><a href="http://localhost:3000/pages/contact">Contact</a></li> -->
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container-fluid -->
+        </nav>
+</header>

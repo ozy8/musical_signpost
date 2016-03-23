@@ -1,0 +1,245 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header {
+  background-color: whitesmoke;
+
+}
+
+#flash {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 2em;
+}
+
+.navbar-brand h5{
+  font-family: 'Tangerine', serif;
+  font-size: 2em;
+  color: #0059b1;
+  margin-top: -30px;
+  font-weight: bolder;
+}
+
+#user_nav{
+  width: 100%;
+  margin-left: -100px;
+  text-align: right;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+#main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.actions li {
+  display: inline;
+  list-style-type: none;
+}
+
+.home_title h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 8em;
+  font-weight: bold;
+  color: #0059b1;
+  text-align: center;
+}
+
+h1 {
+  color: #22527b;
+}
+
+#user_nav {
+  padding-top: 14px;
+}
+
+.home_container {
+  width: 100%;
+  height: 500px;
+  background-image: url("http://musicconsultant.com/site/uploads/2009/09/how-to-make-it-in-the-music-business-crowd.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.home_container h2 {
+  color: whitesmoke;
+}
+
+.search {
+  width: 50%;
+  text-align: center;
+  padding-top: 200px;
+  min-height: 500px;
+  // background-color: grey;
+  // opacity: 0.3;
+}
+
+.search a{
+  color: whitesmoke;
+}
+
+.home_container_1{
+  text-align: center;
+}
+
+.body_container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home_jumbotron {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-md-3 {
+  border: solid black 3px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family:  'Tangerine', serif;
+  font-size: 2em;
+}
+
+.newest_music{
+  height: 300px;
+  width: 270px;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.newest_music img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signpost_display{
+  display: flex;
+  flex-direction: column;
+  background-color: #188dff;
+}
+
+.col-md-4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.music_display {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  background-color: #004d98;
+}
+
+.music_display a {
+  color: whitesmoke;
+}
+
+.music_display .music_title {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: Sans-Serif;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.truncate {
+  padding-left: 30px;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  padding-right: 0;
+  height: 100%;
+}
+
+.comment_container {
+  display: flex;
+  justify-content: center;
+}
+
+.comment {
+  align-self: center;
+  border: black solid 2px;
+  width: 500px;
+  height: 200px;
+}
+
+.happy {
+  background-color: #ffff00;
+}
+
+.emo {
+  background-color: #1a1aff;
+}
+
+.sad {
+  background-color: #262626;
+}
+
+.anger {
+  background-color: #ff0000;
+}
+
+// .happy_img {
+//   background-image: url("http://www.zastavki.com/pictures/2560x1600/2011/Nature_Clouds_Sunshine_028618_.jpg");
+// }
+
+
+.thumbnail_container {
+  height: 300px;
+  width: 300px;
+  float: left;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.singleline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

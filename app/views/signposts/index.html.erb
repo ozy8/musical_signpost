@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Signposts</h1>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <div class="jumbotron clearfix" >
+
+        <% @signposts.each do |signpost| %>
+            <div class="col-md-3">
+              <div class="signpost_display">
+                <div><%= link_to 'Show', signpost %></div>
+                <div><%= signpost.label %></div>
+              </div>
+            </div>
+        <% end %>
+
+    </div>
+  </tbody>
+</table>
+
+<br>
+
+<!-- <%= link_to 'New Signpost', new_signpost_path %> -->

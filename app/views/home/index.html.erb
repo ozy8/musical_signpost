@@ -1,0 +1,43 @@
+
+<div class="home_title">
+  <h1> Musical Signpost </h1>
+</div>
+
+<div class="spacer">&nbsp;</div>
+
+<div class="home_container">
+  <div class="search">
+    <a href ="http://localhost:3000/musics"><h2>Browse Music</h2></a>
+  </div>
+
+  <div class="search">
+    <h2><a href ="http://localhost:3000/signposts">Browse Signpost</a></h2>
+  </div>
+
+</div>
+
+<div class="spacer">&nbsp;</div>
+<div class="spacer">&nbsp;</div>
+
+<div class="home_container_1">
+  <h1> What is a Musical Signpost</h1>
+  <p> Ever listened to a song and realise an immediate connection to it? We call that a musical signpost.
+    <br> That's
+    <br> Hear it. Feel it. Signpost it.
+  </p>
+</div>
+
+<div class="spacer">&nbsp;</div>
+<div class="spacer">&nbsp;</div>
+
+<div class="home_jumbotron">
+
+  <div class="col-md-3">Trending -- Pegged to highest view count which i can't do yet</div>
+  <div class="col-md-3">Newest Music
+    <div class="newest_music">
+      <%=  shownewest @musics.last.youtube_url  %>
+      <a href ="http://localhost:3000/musics/<%= @musics.last.id%>">Listen to song</a>
+    </div>
+  </div>
+  <div class="col-md-3">Request new Signposts</div>
+</div>

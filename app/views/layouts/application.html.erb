@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MusicalSignpost</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+  <div class="spacer">&nbsp;</div>
+  <%= render 'shared/navbar' %>
+  <div class="spacer">&nbsp;</div>
+
+  <div id="flash">
+      <% flash.each do |key, value| %>
+        <div class='flash' id='<%= key %>'>
+          <%= value %>
+        </div>
+      <% end %>
+  </div>
+
+  <div id="main">
+    <div><%= yield %></div>
+  </div>
+
+
+
+  <div class="spacer">&nbsp;</div>
+  <%= render 'shared/footer' %>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @music.title %></h1>
+
+<% if user_signed_in? && (current_user.id == @music.user_id) %>
+    <ul class="actions">
+      <li><%= link_to ' Edit ', edit_music_path(@music), class: "btn btn-primary" %></li>
+      <li><%= link_to ' Delete ', music_path(@music), method: :delete, data: { confirm: "Do you really want to delete this project" }, class: "btn btn-danger" %></li>
+    </ul>
+<% end %>
+
+<div class="spacer">&nbsp;</div>
+<div class="embed-container">
+  <%= embed @music.youtube_url %>
+</div>
+<div class="spacer">&nbsp;</div>
+
+<div class="comment_container">
+    <div class="comment">
+      <div class="<%= emoji(@getsignpost) %>">
+        <%= @music.show_signpost(@music.signpost_ids).label %>
+      </div>
+      <div class="spacer">&nbsp;</div>
+      <%= @music.feeling %>
+    </div>
+</div>
+
+<div class="spacer">&nbsp;</div>
+
+  <%= render 'disqus'%>
+
+
+<!-- <%= link_to 'Edit', edit_music_path(@music) %> | -->
+<%= link_to 'Back', musics_path %>

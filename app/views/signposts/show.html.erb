@@ -16,8 +16,7 @@
         <% @musics.each do |music| %>
             <ul>
               <div>
-                <%= music.title %>
-                <%= link_to 'Show', music %>
+                <%= link_to music.title, music %>
               </div>
 
             </ul>

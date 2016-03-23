@@ -73,6 +73,7 @@ h1 {
   background-position: center;
   display: flex;
   flex-direction: row;
+  min-width: 1000px;
 }
 
 .home_container h2 {
@@ -111,13 +112,17 @@ h1 {
   justify-content: space-between;
 }
 
-.col-md-3 {
+.home_jumbotron .col-md-3 {
   height: 300px;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-family:  'Tangerine', serif;
   font-size: 2em;
+  min-width: 300px;
+  max-width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #0080ff;
 }
 
@@ -150,13 +155,14 @@ h1 {
   height: 300px;
 }
 
-.signpost_show{
-  font-size: 1.5em;
+.label_display {
+  margin-top: 50px;
 }
 
-.label {
+.label a {
+  font-family: helvetica;
   font-size: 2em;
-  color: grey;
+  color: #94a2af;
 }
 
 .col-md-4 {
@@ -243,7 +249,7 @@ h1 {
 }
 
 .sad {
-  background-color: #262626;
+  background-color: #94a2af;
 }
 
 .anger {

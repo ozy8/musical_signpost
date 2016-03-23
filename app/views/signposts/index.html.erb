@@ -20,9 +20,9 @@
 
                 <div style="height: 300px; background-image: url(<%=signpost.img_url%>); ">
 
-
-                <div class="signpost_show"><%= link_to 'Show', signpost %></div>
-                <div class="label"><%= signpost.label %></div>
+                <div class="label_display">
+                  <div class="label"><%= link_to signpost.label, signpost %></div>
+                </div>
 
                 </div>
 

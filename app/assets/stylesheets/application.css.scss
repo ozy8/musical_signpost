@@ -112,13 +112,13 @@ h1 {
 }
 
 .col-md-3 {
-  border: solid black 3px;
   height: 300px;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-family:  'Tangerine', serif;
   font-size: 2em;
+  background-color: #0080ff;
 }
 
 .newest_music{
@@ -134,10 +134,29 @@ h1 {
   height: auto;
 }
 
+.jumbotron .col-md-3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family:  'Tangerine', serif;
+  font-size: 2em;
+  background-color: transparent;
+}
+
 .signpost_display{
   display: flex;
   flex-direction: column;
-  background-color: #188dff;
+  height: 300px;
+}
+
+.signpost_show{
+  font-size: 1.5em;
+}
+
+.label {
+  font-size: 2em;
+  color: grey;
 }
 
 .col-md-4 {

@@ -5,7 +5,6 @@ class SignpostsController < ApplicationController
   # GET /signposts.json
   def index
     @signposts = Signpost.all
-
   end
 
   # GET /signposts/1

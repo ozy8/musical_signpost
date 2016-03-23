@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160321083614) do
 
   create_table "signposts", force: :cascade do |t|
     t.string   "label"
+    t.string   "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

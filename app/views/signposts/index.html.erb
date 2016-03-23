@@ -12,14 +12,25 @@
   <tbody>
     <div class="jumbotron clearfix" >
 
+
+
         <% @signposts.each do |signpost| %>
             <div class="col-md-3">
               <div class="signpost_display">
-                <div><%= link_to 'Show', signpost %></div>
-                <div><%= signpost.label %></div>
+
+                <div style="height: 300px; background-image: url(<%=signpost.img_url%>); ">
+
+
+                <div class="signpost_show"><%= link_to 'Show', signpost %></div>
+                <div class="label"><%= signpost.label %></div>
+
+                </div>
+
               </div>
             </div>
         <% end %>
+
+
 
     </div>
   </tbody>
